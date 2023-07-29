@@ -1,7 +1,17 @@
-const ProjectsComponent = () => {
+const MyProjectsComponent = () => {
     return (
-        <div>Project</div>
+        <div className="mx-20">
+            <h2>Projects</h2>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     )
 }
 
-export default ProjectsComponent;
+export default MyProjectsComponent;

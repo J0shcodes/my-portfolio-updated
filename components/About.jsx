@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <div className="">
+    <div className="mx-20">
       <div className="flex justify-between">
         <div className="w-[35rem] pt-12">
           <div>

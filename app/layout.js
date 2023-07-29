@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <Header/> */}
-      <body className={spaceGrotesk.className + " mx-20 my-6"}>
+      <body className={spaceGrotesk.className + " mt-6"}>
         <Header/>
         <div>
         {children}
