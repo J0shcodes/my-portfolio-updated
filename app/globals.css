@@ -24,7 +24,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    background: #191919;
+    background: #0d0d0d;
+}
+
+.hero {
+  /* -webkit-backface-visibility: hidden; */
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
 }
 
 @layer utilities {

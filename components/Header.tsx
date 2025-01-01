@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center py-[2.1875rem] px-[7.5625rem]">
-      <div className="text-[2.8125rem] font-bold flex items-center"><Link href="/">JM</Link></div>
-      <div className="flex justify-between items-center w-[60.0625rem]">
+    <div className="flex justify-between items-center absolute px-8 py-4 w-full">
+      <div className="text-[2.8125rem] font-bold flex items-center text-header-color"><Link href="/">JM</Link></div>
+      {/* <div className="flex justify-between items-center w-[60.0625rem]">
         <ul className="flex justify-between w-[65%]">
           <li>
             <Link href="/" legacyBehavior>
@@ -52,6 +52,10 @@ const Header = () => {
             </a>
           </Link>
         </div>
+      </div> */}
+      <div className="space-y-1.5 cursor-pointer">
+        <div className="h-0.5 w-12 bg-header-color"></div>
+        <div className="h-0.5 w-10 bg-header-color"></div>
       </div>
     </div>
   );
