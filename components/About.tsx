@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Header from "./Header";
+
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-[6.1875rem] px-[7.5625rem] h-screen">
+    <div className="flex flex-col items-center justify-center relative h-full">
+      {/* <Header/> */}
       {/* <div className="">
         <div> */}
       {/* <Image
@@ -42,12 +45,20 @@ const About = () => {
             </div>
           </div>
         </div>
-        <p className="mt-6 text-[#8C8C8C]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          voluptatibus distinctio veritatis unde corporis laboriosam quidem, quo
-          quasi non totam maiores quod? Cupiditate deserunt adipisci aliquid
-          veritatis beatae quae ut.
-        </p>
+        <div className="mt-6 text-[#8C8C8C] space-y-4">
+          <p >
+            A Software engineer who loves building clean, responsive, and
+            user-friendly interfaces. I am also passionate about building
+            delightful digital experiences that are fast, functional, and
+            genuinely useful.
+          </p>
+          <p>
+            Outside of coding, I’m usually learning something new, tinkering
+            with side projects, or writing to share what I’ve picked up along
+            the way.
+          </p>
+          <p>Let&apos;s build something cool together</p>
+        </div>
       </div>
       {/* <div className="mt-14 flex justify-between w-[350px]">
         <button className="bg-white text-[#161513] font-bold text-lg rounded-full py-2 px-5 border border-solid border-white hover:bg-transparent hover:text-white">
@@ -58,6 +69,7 @@ const About = () => {
         </button>
       </div> */}
     </div>
+    // </div>
   );
 };
 

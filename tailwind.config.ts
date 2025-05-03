@@ -81,6 +81,9 @@ const config: Config = {
         // },
       }
     },
+    fontFamily: {
+      spaceMono: ["var(--font-space-mono)", "sans-serif"]
+    }
   },
   plugins: [],
 };
