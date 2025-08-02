@@ -39,7 +39,7 @@ const HamburgerMenu = () => {
     <div
       className={`bg-[#0d0d0d] fixed w-full z-50 ${
         openHamburgerMenu ? "top-0" : "-top-[100%]"
-      } px-8 py-4 h-screen transition-[top] ease-in-out`}
+      } px-8 py-4 min-h-screen transition-[top] ease-in-out`}
     >
       <section className="flex justify-between">
         <div className="text-[2.8125rem] font-bold flex items-center text-header-color">
@@ -51,14 +51,14 @@ const HamburgerMenu = () => {
           onClick={() => setOpenHamburgerMenu(false)}
           className="flex flex-col justify-center space-y-1"
         >
-          <div className="h-0.5 w-12 translate-y-1.5 rotate-45 rounded-full bg-[#1E90FF]"></div>
-          <div className="h-0.5 w-12 rounded-full bg-[#1E90FF] opacity-0"></div>
-          <div className="h-0.5 w-12 -translate-y-1.5 -rotate-45 rounded-full bg-[#1E90FF]"></div>
+          <div className="h-0.5 sm:w-12 w-8 translate-y-1.5 rotate-45 rounded-full bg-[#1E90FF]"></div>
+          <div className="h-0.5 sm:w-12 w-8 rounded-full bg-[#1E90FF] opacity-0"></div>
+          <div className="h-0.5 sm:w-12 w-8 -translate-y-1.5 -rotate-45 rounded-full bg-[#1E90FF]"></div>
         </button>
       </section>
-      <section className="mt-14 flex gap-6">
+      <section className="mt-14 flex gap-8">
         <div className="h-1 w-16 bg-[#2E3B4E] flex self-center"></div>
-        <div className="flex justify-between w-[12%]">
+        <div className="flex justify-betwee gap-x-10">
           <Link href="https://github.com/J0shcodes" target="_blank">
             <FaGithub size={22} />
           </Link>
@@ -77,17 +77,17 @@ const HamburgerMenu = () => {
         </div>
       </section>
       <section className="mt-16">
-        <div className="w-[35%] space-y-20">
+        <div className="xl:w-[50%] lg:w-[52%] space-y-20">
           {hamburgerMenuData.map((item, index) => (
             <div className="grid grid-cols-6" key={index}>
               <Link
                 href={item.link}
-                className="text-5xl text-[#4AA3FF] hover:text-header-color col-span-3 font-spaceMono"
+                className="sm:text-5xl text-3xl text-[#4AA3FF] hover:text-header-color col-span-3 font-spaceMono font-semibold"
                 onClick={() => setOpenHamburgerMenu(false)}
               >
                 {item.name}
               </Link>
-              <p className="flex self-center text-[#8C8C8C] col-span-3">
+              <p className="md:flex self-center text-[#8C8C8C] col-span-3 hidden">
                 {item.description}
               </p>
             </div>

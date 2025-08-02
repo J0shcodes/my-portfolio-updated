@@ -7,7 +7,7 @@ import Image from "next/image";
 import About from "@/components/About";
 import TechStack from "@/components/Stack";
 import Experiences from "@/components/Experiences";
-import Projects from "@/components/Projects";
+
 import HamburgerMenu from "@/components/HamburgerMenu";
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <main
-      className="bg-[#2E3B4E] h-screen relative"
+      className="bg-[#2E3B4E] relative min-h-screen flex flex-col justify-center items-center"
       // ref={parentRef}
       // style={{ height: "calc(100vh - 40px)" }}
       // onScroll={(e) => e.preventDefault()}

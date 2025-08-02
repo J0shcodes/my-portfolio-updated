@@ -24,13 +24,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    /* background: #0d0d0d; */
-    /* padding: 20px; */
-    /* overflow-y: scroll; */
-    /* height: 100vh; */
+  /* background: #0d0d0d; */
+  /* padding: 20px; */
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
 }
-
-
 
 /* body::before {
   content: 'hjhjhjh';
@@ -42,7 +40,7 @@ body {
 .hero {
   /* -webkit-backface-visibility: hidden; */
   -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 @layer utilities {
