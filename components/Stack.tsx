@@ -1,209 +1,47 @@
-import Image from "next/image";
+import { techStack } from "@/data/techStack";
 
 const TechStack = () => {
   return (
-    <div className="py-[6.1875rem] px-[7.5625rem] text-[#e6e6e6]">
-      <div className="text-center">
-        <h2 className="text-4xl font-bold">My Tech Stack/Tools</h2>
-        <p className="text-lg mt-4">Technologies and tools I work with</p>
+    <>
+      <div className="bg-gray-900/90 border border-emerald-500/60 rounded-lg md:p-6 p-3 backdrop-blur-sm shadow-lg shadow-emerald-500/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {techStack.map((tech, index) => (
+            <div
+              key={tech.name}
+              className="group relative bg-gray-800/80 border border-emerald-400/40 rounded p-4 hover:border-emerald-400/80 hover:bg-gray-800/90 transition-all duration-300"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="absolute top-0 left-0 w-full h-0.5 bg-emerald-400 opacity-0 group-hover:opacity-100 animate-pulse" />
+
+              <div className="flex items-center space-x-4 mb-3">
+                <div
+                  className="text-3xl"
+                  style={{
+                    color: tech.color,
+                    textShadow: `0 0 10px ${tech.color}`,
+                  }}
+                >
+                  {tech.icon}
+                </div>
+                <div>
+                  <h3 className="text-emerald-300 font-bold text-lg">
+                    {tech.name}
+                  </h3>
+                  <p className="text-emerald-200/80 text-sm">{tech.category}</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-950/80 rounded p-3 mb-3 border border-gray-600/50">
+                <code className="text-emerald-300/90 text-xs">
+                  {tech.matrixCode}
+                </code>
+              </div>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-emerald-400/20 rounded transition-opacity duration-200" />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-6 mt-14">
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        <div>
-          <Image
-            className="col-span-1"
-            src="/assets/icons/html.svg"
-            alt=""
-            width={80}
-            height={80}
-          />
-        </div>
-        
-       
-        {/* <Image
-          className="col-span-1"
-          src="/assets/icons/html.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/css3.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/js.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/typescript.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/python.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/solidity.svg"
-          alt=""
-          width={50}
-          height={50}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/react.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/nextjs2.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/tailwind.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/git.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/githubtechdark.svg"
-          alt=""
-          width={80}
-          height={80}
-        />
-        <Image
-          className="col-span-1"
-          src="/assets/icons/vscode.svg"
-          alt=""
-          width={80}
-          height={80}
-        /> */}
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -5,9 +5,9 @@ import { articleData } from "@/data/technicalWritingData";
 
 const MyWritings = () => {
   return (
-    <div className="relative bg-[#121212] flex flex-col items-center min-h-screen pt-52 pb-44">
+    <div className="relative flex flex-col items-center min-h-screen pt-52 pb-44">
       <div className="md:w-[70%] w-[80%]">
-        <header className="space-y-10">
+        <header className="space-y-10 animate-slideUp delay-400">
           <h2 className="sm:text-5xl text-4xl font-spaceMono font-bold text-[#DCE3F2]">
             My Writings<span className="text-[#1E90FF]">.</span>
           </h2>
@@ -45,7 +45,7 @@ const MyWritings = () => {
             </p>
           </div>
         </header>
-        <div className="mt-10 grid grid-cols-12 gap-6">
+        <div className="mt-10 grid grid-cols-12 gap-6 animate-slideUp delay-600">
           {articleData.map((article, index) => (
             <div
               key={index}

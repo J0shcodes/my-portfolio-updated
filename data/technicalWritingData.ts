@@ -29,7 +29,7 @@ export const articleData = [
     description:
       "Confused about Ethereum scalability? Learn how Layer 2 technologies are making transactions on ETH faster and cheaper without losing security",
     imageUrl:
-      "https://images.pexels.com/photos/14891535/pexels-photo-14891535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=600&dpr=2",
+      "/assets/images/ethereum.webp",
     link: "https://medium.com/@mosesjoshua350/ethereums-path-to-scalability-an-inside-look-at-layer-2-technologies-ad4f877f185e",
   },
 ];

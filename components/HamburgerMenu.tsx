@@ -5,7 +5,6 @@ import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 import { TfiEmail } from "react-icons/tfi";
 
 import { usePortfolioGlobalContext } from "@/context/PortfolioGlobalContext";
-import { GiConsoleController } from "react-icons/gi";
 
 const hamburgerMenuData = [
   {
@@ -19,14 +18,14 @@ const hamburgerMenuData = [
     link: "/projects",
   },
   {
-    name: "About",
-    description: "Back to the home page",
-    link: "/about",
-  },
-  {
     name: "Writings",
     description: "Thoughts, tutorials & dev notes",
     link: "/writings",
+  },
+  {
+    name: "Tools",
+    description: "Back to the home page",
+    link: "/tools",
   },
 ];
 
@@ -34,7 +33,6 @@ const HamburgerMenu = () => {
   const { openHamburgerMenu, setOpenHamburgerMenu } =
     usePortfolioGlobalContext();
 
-    console.log(openHamburgerMenu)
   return (
     <div
       className={`bg-[#0d0d0d] fixed w-full z-50 ${
@@ -57,7 +55,7 @@ const HamburgerMenu = () => {
         </button>
       </section>
       <section className="mt-14 flex gap-8">
-        <div className="h-1 w-16 bg-[#2E3B4E] flex self-center"></div>
+        <div className="h-1 w-16 bg-[#339DFF]/20 flex self-center"></div>
         <div className="flex justify-betwee gap-x-10">
           <Link href="https://github.com/J0shcodes" target="_blank">
             <FaGithub size={22} />

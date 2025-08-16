@@ -7,9 +7,11 @@ import ProjectData from "@/interfaces/projectData";
 const ProjectCard = ({
   project,
   isRight,
+  completed,
 }: {
   project: ProjectData;
   isRight: boolean;
+  completed: boolean;
 }) => (
   <div
     className={`bg-[#212121] p-6 hover:bg-[#4d4d4d] h-96 transition-all duration-300 hover:scale-105 flex flex-col ${
@@ -27,28 +29,30 @@ const ProjectCard = ({
       {project.description}
     </p>
 
-    <div className="flex items-center justify-end">
-      <div className="flex space-x-3">
-        {project.liveUrl && (
-          <Link
-            href={project.liveUrl}
-            target="_blank"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <ExternalLink size={16} />
-          </Link>
-        )}
-        {project.githubUrl && (
-          <Link
-            href={project.githubUrl}
-            target="_blank"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <FaGithub size={16} />
-          </Link>
-        )}
+    {completed && (
+      <div className="flex items-center justify-end">
+        <div className="flex space-x-3">
+          {project.liveUrl && (
+            <Link
+              href={project.liveUrl}
+              target="_blank"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <ExternalLink size={16} />
+            </Link>
+          )}
+          {project.githubUrl && (
+            <Link
+              href={project.githubUrl}
+              target="_blank"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              <FaGithub size={16} />
+            </Link>
+          )}
+        </div>
       </div>
-    </div>
+    )}
   </div>
 );
 
