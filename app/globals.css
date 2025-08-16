@@ -18,10 +18,101 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  /* background: #0d0d0d; */
+  /* padding: 20px; */
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+}
+
+/* body::before {
+  content: 'hjhjhjh';
+  background: #2E3B4E;
+  width: inherit;
+  height: 100%;
+} */
+
+.hero {
+  /* -webkit-backface-visibility: hidden; */
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+  opacity: 0;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+  opacity: 0;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+  opacity: 0;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+  opacity: 0;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+  opacity: 0;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.delay-2000 {
+  animation-delay: 2000ms;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
