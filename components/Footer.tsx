@@ -72,7 +72,7 @@ const Footer = () => {
             </Link>
           </li> */}
         </ul>
-        <div className="sm:text-start text-center sm:text-base text-sm">J0shcodes &copy; 2025</div>
+        <div className="sm:text-start text-center sm:text-base text-sm">J0shcodes &copy; 2026</div>
       </div>
     </div>
   );

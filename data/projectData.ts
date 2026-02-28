@@ -43,42 +43,43 @@ export const projects = [
 
 export const workInProgress = [
   {
-    title: "Criptnox",
-    technologies: ["NEXT.JS", "TYPESCRIPT", "JAVASCRIPT", "TAILWINDCSS"],
+    title: "SemaFy",
+    technologies: ["NEXT.JS", "TYPESCRIPT", "JAVASCRIPT", "TAILWINDCSS", "BLOCKCHAIN", "AI"],
     description:
-      "Criptnox is a mobile-first PWA that delivers instant crypto price alerts via push notifications, email, and SMS. Monitor Bitcoin, Ethereum, and altcoins with customizable alert conditions.",
+      "semaFy converts smart contracts into clear, human-readable explanations. It helps users understand what a contract does, who controls it, and what risks they take, before interacting on-chain.",
     liveUrl: "https://component-playground-beta.vercel.app/",
     githubUrl: "https://github.com/J0shcodes/criptnox",
   },
   {
-    title: "ALATPAY React SDK",
+    title: "Blindroll",
     technologies: [
-      "VITE",
+      "NEXT.JS",
       "TYPESCRIPT",
-      "JEST",
-      "REACT TESTING LIBRARY",
-      "ROLLUP",
+      "SOLIDITY",
+      "EVM",
+      "fhEVM",
+      "BLOCKCHAIN",
     ],
     description:
-      "The ALATPay React SDK is a lightweight, developer-friendly library I am building to make it easy for React developers to integrate ALATPay’s payment system into their apps, similar to how Stripe Elements works. It’s designed to be fast to set up, secure by design, and flexible enough to grow with more payment methods over time.",
+      "Confidential onchain payroll using Fully Homomorphic Encryption. Pay your team on Ethereum; individual salaries stay completely private, encrypted end-to-end with Zama's fhEVM.",
     liveUrl: "https://mr-clima-v2.vercel.app/",
     githubUrl: "https://github.com/J0shcodes/mr-clima-v2",
   },
-  {
-    title: "React Cards",
-    technologies: [
-      "VITE",
-      "TYPESCRIPT",
-      "EMOTION",
-      "STORYBOOK",
-      "PLAYWRIGHT",
-      "VITEPRESS",
-    ],
-    description:
-      "The React Cards UI Library is a custom-built component library I’m developing to make it easy for developers to build beautiful, accessible, and responsive card-based UIs in React. Whether you're designing a product catalog, a dashboard, or a content grid, this library gives you everything you need to move fast without reinventing the wheel. Inspired by design systems like Stripe’s and component frameworks like Radix, the library will include a collection of atomic card components, industry-specific templates (e.g. for fintech or e-commerce), and built-in support for themes and animations. It will be built with accessibility (WCAG 2.1 AA) and performance in mind, with motion-ready layouts, swipe gestures, and keyboard navigation.",
-    liveUrl: "https://mr-clima-v2.vercel.app/",
-    githubUrl: "https://github.com/J0shcodes/mr-clima-v2",
-  },
+  // {
+  //   title: "React Cards",
+  //   technologies: [
+  //     "VITE",
+  //     "TYPESCRIPT",
+  //     "EMOTION",
+  //     "STORYBOOK",
+  //     "PLAYWRIGHT",
+  //     "VITEPRESS",
+  //   ],
+  //   description:
+  //     "The React Cards UI Library is a custom-built component library I’m developing to make it easy for developers to build beautiful, accessible, and responsive card-based UIs in React. Whether you're designing a product catalog, a dashboard, or a content grid, this library gives you everything you need to move fast without reinventing the wheel. Inspired by design systems like Stripe’s and component frameworks like Radix, the library will include a collection of atomic card components, industry-specific templates (e.g. for fintech or e-commerce), and built-in support for themes and animations. It will be built with accessibility (WCAG 2.1 AA) and performance in mind, with motion-ready layouts, swipe gestures, and keyboard navigation.",
+  //   liveUrl: "https://mr-clima-v2.vercel.app/",
+  //   githubUrl: "https://github.com/J0shcodes/mr-clima-v2",
+  // },
   // {
   //   title: "SeaBaas",
   //   technologies: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "REDUX TOOLKIT"],
