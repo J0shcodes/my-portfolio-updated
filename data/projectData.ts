@@ -23,33 +23,6 @@ export const projects = [
     liveUrl: "https://mr-clima-v2.vercel.app/",
     githubUrl: "https://github.com/J0shcodes/my-portfolio-updated",
   },
-  // {
-  //   title: "SeaBaas",
-  //   technologies: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "REDUX TOOLKIT"],
-  //   description:
-  //     "Africa's first indigenous core banking system. I led the frontend team that developed key modules (Customer Management, Customer Forms Configuration, Product Factory) for the application",
-  //   liveUrl: "#",
-  //   githubUrl: "#",
-  // },
-  // {
-  //   title: "Checkref",
-  //   technologies: ["NEXT.JS", "TYPESCRIPT", "CHAKRA UI", "TAILWINDCSS"],
-  //   description:
-  //     "Professional reference management platform that empowers HR departments to efficiently handle reference requests, track responses, and maintain organized records throughout the hiring process. Built with mobile-first design and secure document workflows.",
-  //   liveUrl: "#",
-  //   githubUrl: "#",
-  // },
-];
-
-export const workInProgress = [
-  {
-    title: "SemaFy",
-    technologies: ["NEXT.JS", "TYPESCRIPT", "JAVASCRIPT", "TAILWINDCSS", "BLOCKCHAIN", "AI"],
-    description:
-      "semaFy converts smart contracts into clear, human-readable explanations. It helps users understand what a contract does, who controls it, and what risks they take, before interacting on-chain.",
-    liveUrl: "https://component-playground-beta.vercel.app/",
-    githubUrl: "https://github.com/J0shcodes/criptnox",
-  },
   {
     title: "Blindroll",
     technologies: [
@@ -62,9 +35,35 @@ export const workInProgress = [
     ],
     description:
       "Confidential onchain payroll using Fully Homomorphic Encryption. Pay your team on Ethereum; individual salaries stay completely private, encrypted end-to-end with Zama's fhEVM.",
-    liveUrl: "https://mr-clima-v2.vercel.app/",
-    githubUrl: "https://github.com/J0shcodes/mr-clima-v2",
+    liveUrl: "https://blindroll.vercel.app",
+    githubUrl: "https://github.com/J0shcodes/blindroll",
   },
+];
+
+export const workInProgress = [
+  {
+    title: "SemaFy",
+    technologies: ["NEXT.JS", "TYPESCRIPT", "JAVASCRIPT", "TAILWINDCSS", "BLOCKCHAIN", "AI"],
+    description:
+      "semaFy converts smart contracts into clear, human-readable explanations. It helps users understand what a contract does, who controls it, and what risks they take, before interacting on-chain.",
+    liveUrl: "https://component-playground-beta.vercel.app/",
+    githubUrl: "https://github.com/J0shcodes/criptnox",
+  },
+  // {
+  //   title: "Blindroll",
+  //   technologies: [
+  //     "NEXT.JS",
+  //     "TYPESCRIPT",
+  //     "SOLIDITY",
+  //     "EVM",
+  //     "fhEVM",
+  //     "BLOCKCHAIN",
+  //   ],
+  //   description:
+  //     "Confidential onchain payroll using Fully Homomorphic Encryption. Pay your team on Ethereum; individual salaries stay completely private, encrypted end-to-end with Zama's fhEVM.",
+  //   liveUrl: "https://mr-clima-v2.vercel.app/",
+  //   githubUrl: "https://github.com/J0shcodes/mr-clima-v2",
+  // },
   // {
   //   title: "React Cards",
   //   technologies: [
