@@ -9,6 +9,7 @@ export const projects = [
       "FASTAPI",
     ],
     description: "A lightweight Python REST API built with FastAPI, Pandas, and Pydantic.",
+    liveUrl: "",
     githubUrl: "https://github.com/J0shcodes/pandas-query-api"
   },
   {
